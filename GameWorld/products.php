@@ -6,7 +6,22 @@ if (isset($_GET['categoryID'])) {
 } else {
     $sql ="SELECT * FROM games";
 }
+
+if (isset($_GET['categoryID'])) {
+    if ($categoryID == 1) {
+        $Bordercolor = "Playstation";
+    } elseif ($categoryID == 2) {
+        $Bordercolor = "Xbox";
+    } elseif ($categoryID == 3) {
+        $Bordercolor = "PC";
+    }
+} else {
+    $Bordercolor = "Empty";
+}
+
 ?>
+
+
 
 <!DOCTYPE html>
 <html>
@@ -16,7 +31,8 @@ if (isset($_GET['categoryID'])) {
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>GameWorld</title>
 </head>
-<body>
+
+<body id="<?php echo $Bordercolor ?>">
   <?php include 'inc/Header.php'; ?>
   <?php include 'inc/Menu.php'; ?>
 <div  id="main-container">
@@ -25,21 +41,19 @@ if (isset($_GET['categoryID'])) {
     <div class="consoleheadertext">
 			<?php
 
-
-                if ($categoryID == 1) {
-                    echo "Playstation";
-                }
-                if ($categoryID == 2) {
-                    echo "Xbox";
-                }
-                if ($categoryID == 3) {
-                    echo "PC";
-                }
-                                if ($categoryID == 0) {
-                                    echo "ALl Games";
-                                }
-
+if (isset($_GET['categoryID'])) {
+    if ($categoryID == 1) {
+        echo "Playstation";
+    } elseif ($categoryID == 2) {
+        echo "Xbox";
+    } elseif ($categoryID == 3) {
+        echo "PC";
+    }
+} else {
+    echo "All Games";
+}
         ?>
+
   </div>
 
 </div>
@@ -56,6 +70,7 @@ if (isset($_GET['categoryID'])) {
 				<img class="gameimage "src= <?php echo $row['gameImage']; ?> >
 
 			  <div class="productname">
+
 			    <?php echo $row['gameTitle']; ?>
 			  </div>
 			  <div class="price">
@@ -63,7 +78,9 @@ if (isset($_GET['categoryID'])) {
 			</div>
 
 			<div class="order">
+				<a href="Checkout.php">
 			  order
+			</a>
 			</div>
 			</div>
 			</div>

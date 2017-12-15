@@ -1,3 +1,25 @@
+<?php
+
+if (isset($_POST['submit'])) {
+    $to = "bholtackers@gmail.com";
+    $from = $_POST['Your_E_mail'];
+    $Your_first_name = $_POST['Your_first_name'];
+    $Your_last_name = $_POST['Your_last_name'];
+    $Date_of_birth = $_POST['Date_of_birth'];
+    $Your_country = $_POST['Your_country'];
+    $subject = "Form Submission";
+    $subject2 = "Copy of your form submission";
+    $feedback= $Your_first_name . " " . $Your_last_name . " wrote the following:" . "\n\n" . $POST['feedback'];
+    $feedback2 = "Here is a copy of your message" . $Your_first_name . "\n\n" . $_POST['feedback'];
+
+    $header = "From:" . $from;
+    $header2 = "From" . $to;
+    mail($to, $subject, $feedback, $header);
+    mail($from, $subject2, $feedback2, $header2);
+    header('Location: index.php');
+}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,27 +33,27 @@
   <?php include 'inc/Menu.php'; ?>
 	<div  id="main-container">
 		<div class="banner">
-	<form id="form" action="" method="">
+	<form id="form" action="" method="post">
 		<ul>
 			<li>
 				<label> Your first name?</label>
-				<input class="formBody" type="text" name="Your_first_name" value="">
+				<input class="formBody" type="text" name="Your_first_name">
 			</li>
 			<li>
 				<label> Your last name?</label>
-				<input class="formBody" type="text" name="Your_last_name" value="">
+				<input class="formBody" type="text" name="Your_last_name">
 			</li>
 			<li>
 				<label> Your E-mail?</label>
-				<input class="formBody" type="email" name="Your_E-mail" value="">
+				<input class="formBody" type="email" name="Your_E_mail">
 			</li>
 			<li>
 				<label> Date of birth</label>
-				<input class="formBody" type="date" name="Date_of_birth" value="">
+				<input class="formBody" type="date" name="Date_of_birth">
 			</li>
 			<li>
 				<label>Your Country</label>
-				<select class="formBody">
+				<select class="formBody" name="Your_country">
 					<option value=" "></option>
 					<option value="AF">Afghanistan</option>
 					<option value="AX">Åland Islands</option>
@@ -287,7 +309,7 @@
 				<label> <span>Message </span><textarea class="formMessage" name="feedback"></textarea></label>
 			</li>
 			<li>
-				<input class="formButton" type="submit" value="Send Now!">
+				<input class="formButton" type="submit" name="submit" value="Send Now!">
 				<input class="formButton" type="reset" value="Clear">
 			</li>
 		</ul>
