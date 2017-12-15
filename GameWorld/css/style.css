@@ -1,0 +1,394 @@
+#main-container {
+  width: 1000px;
+  height: 670px;
+  margin: 0 auto;
+  margin-top: 10px;
+  position: relative;
+  background-image: url("../images/Wolf.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+}
+
+.banner {
+height: 250px;
+}
+
+
+
+.banner-text {
+  margin-left: 10px;
+  margin-right: 10px;
+  z-index: 1;
+  color: #000000;
+  font-size: 37px;
+  font-weight: bold;
+  font-family: "Impact";
+  text-decoration: none;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+#consoleimages {
+  margin: 0 auto;
+  float: left;
+  margin-top: 100px;
+  margin-left: 70px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.consoles {
+  width: 250px;
+  height: 150px;
+  bottom: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  float: left;
+  margin: 0 auto;
+  margin-right: 50px;
+
+
+}
+.ps {
+  background-image: url("../images/ps.1.jpg");
+}
+
+#ps-text {
+  color: white;
+  z-index: 3;
+  bottom: 0;
+  padding-top: 100px;
+  padding-left: 7px;
+  margin-left: 40px;
+  margin-bottom: 5px;
+  font-size: 37px;
+  font-weight: bold;
+  font-family: "Impact";
+  text-decoration: none;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.xbox {
+  background-image: url("../images/xbox.1.jpg");
+}
+
+#xbox-text {
+  color: white;
+  z-index: 3;
+  bottom: 0;
+  padding-top: 100px;
+  padding-left: 7px;
+  margin-left: 90px;
+  margin-bottom: 5px;
+  font-size: 37px;
+  font-weight: bold;
+  font-family: "Impact";
+  text-decoration: none;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.pc {
+  background-image: url("../images/pc.3.jpg");
+}
+
+#pc-text {
+  color: white;
+  z-index: 3;
+  bottom: 0;
+  padding-top: 100px;
+  margin-left: 110px;
+  margin-bottom: 5px;
+  font-size: 37px;
+  font-weight: bold;
+  font-family: "Impact";
+  text-decoration: none;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+
+#footer {
+  background-color: rgba(0, 0, 0, 0.0);
+  height: 40px;
+  width: 1000px;
+  left: 260px;
+  position: relative;
+  padding-top: 5px;
+  text-align: center;
+  color: white;
+  font-family: "Impact";
+}
+
+#consoleheader{
+  background-color: rgba(0, 0, 0, 0.71);
+  height: 50px;
+  width: 980px;
+  position: absolute;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-left: 10px;
+
+}
+
+.consoleheadertext {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  text-align: left;
+  color: #000000;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Impact";
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+.product {
+  z-index: 3;
+  height: 240px;
+  width: 235px;
+  background-color: rgba(0, 0, 0, 0.0);
+  border-radius: 25px;
+  top: 70px;
+  left: 10px;
+  float: left;
+  margin-left: 12px;
+  margin-top: 70px;
+}
+
+.pBottom {
+  margin-top: 10px;
+}
+
+
+
+.gameimage {
+  position: absolute;
+  height: 240px;
+  width: 235px;
+  background-image: url("../images/cover.jpg");
+  border-radius: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.productname {
+  z-index: 4;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.71);
+  border-radius: 25px;
+  width: 235px;
+  height: 45px;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Impact";
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.price {
+  z-index: 4;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.00);
+  border-radius: 25px;
+  width: 100px;
+  height: 15px;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: "Impact";
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.order {
+  z-index: 4;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.00);
+  border-radius: 25px;
+  width: 100px;
+  height: 15px;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: "Impact";
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+#header {
+  background-color: rgba(0, 0, 0, 0.0);
+  height: 70px;
+  margin-left:  260px;
+  position: relative;
+}
+
+#logo {
+  float: left;
+  margin-top: 15px;
+  margin-left: 0px;
+}
+
+
+#logo ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#logo li {
+  display: inline;
+}
+
+#logo li a {
+  color: #000000;
+  font-size: 37px;
+  font-weight: bold;
+  font-family: "Impact";
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+#logo li a:hover {
+  color: rgb(43, 43, 43);
+}
+
+#main-nav {
+  background-color: rgba(0, 0, 0, 0.0);
+
+  margin-left:  260px;
+}
+
+.dash {
+  color: #000000;
+  padding-right: 10px;
+  font-size: 37px;
+  font-weight: bold;
+  font-family: "Impact";
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+#main-nav ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#main-nav li {
+  display: inline;
+}
+
+#main-nav li a {
+  display: inline-block;
+  width: auto;
+  padding-right: 10px;
+  height: 45px;
+  color: #000000;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Impact";
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+#main-nav li a:hover {
+color: rgb(43, 43, 43);
+}
+
+#form ul {
+
+  }
+
+#form li {
+  list-style: none;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 10px;
+  margin-left: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Impact";
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+  }
+}
+
+#form li a {
+  }
+
+.formBody {
+  border-color: black;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.70);
+  text-decoration: none;
+  width: 900px;
+  color: white;
+  padding-left: 5px;
+  font-family: "Impact";
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.formButton {
+  display: inline-block;
+  width: 450px;
+  height: 90px;
+  background-color: black;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Impact";
+  text-transform: uppercase;
+  border-radius: 25px;
+  border: 2px solid white;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+.formButton:hover{
+    background-color: rgb(43, 43, 43);
+    color: rgb(43, 43, 43);
+}
+
+.formMessage {
+  height: 150px;
+  width: 900px;
+  display: block;
+  border-color: black;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.70);
+  text-decoration: none;
+  font-family: "Impact";
+  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+body {
+  background-image: url("../images/Lion.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
